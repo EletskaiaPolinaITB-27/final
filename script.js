@@ -2,9 +2,6 @@ const btnAbout = document.getElementById('btn-about')
 const btnStudy = document.getElementById('btn-study')
 const btnHobby = document.getElementById('btn-hobby')
 
-const hobbies = ['draw', 'music', 'cook'];
-
-
 
 const customAlert = (message) => {
     const overlay = document.createElement('div');
@@ -19,12 +16,31 @@ const customAlert = (message) => {
     messageH3.textContent = message;
     contentDiv.append(messageH3);
 
+    const closeButton = document.createElement('button');
+    closeButton.className = 'closeBtn';
+    closeButton.textContent = 'nice';
+    contentDiv.append(closeButton);
+
+    closeButton.addEventListener('click', () => {
+        overlay.remove();
+    })
+
      overlay.addEventListener('click', (event) =>{
         if (event.target.className === 'overlay'){
             overlay.remove();
         }
     })
 }
+
+
+const hobbies = [
+    {title: 'cook'},
+    {title: 'draw'},
+    {title:'music'}
+];
+
+
+
 
 btnAbout.addEventListener('click', () => {
      customAlert('my name is Polina, Im 17. my birth 5 september 2008. i have a dog and 4 cats.')

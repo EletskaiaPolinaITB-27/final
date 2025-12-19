@@ -49,3 +49,10 @@
     border-radius: 12px;
     text-align: center;
 }
+.closeBtn{
+    background-color: rgb(231, 122, 227);
+    color: rgb(39, 40, 40);
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid grey;
+}
