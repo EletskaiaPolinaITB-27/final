@@ -1,0 +1,51 @@
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(70, 69, 69, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#btn-about{
+    background-color: rgb(236, 209, 234);
+    color: rgb(63, 63, 63);
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(215, 152, 216);
+}
+#btn-study{ 
+    background-color: rgb(216, 184, 238);
+    color: rgb(63, 63, 63);
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(153, 206, 238);
+}
+#btn-hobby{
+    background-color: rgb(164, 185, 229);
+    color: rgb(63, 63, 63);
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(112, 100, 125);
+}
+.content{
+    background-color: rgb(182, 199, 214);
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+}
